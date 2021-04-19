@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+</head>
+<style>
+    body{
+        background-color:linen;
+    }
+
+    .left{
+        /* float : left; */
+        /* display: inline-block; */
+        position: absolute;
+        border: 2px solid yellow;
+       width: 500px;
+       padding: 15px;
+       margin: 20px;
+       top: 300px;
+       margin-right: 35px;
+       margin-left: 30px;
+       background-color: aquamarine;
+       box-sizing: border-box;
+    }
+    .right{
+        /* float : right; */
+        display: inline-block;
+        position: relative;
+        border: 2px solid rgb(255, 187, 0);
+        width: 500px;
+        padding: 15px;
+        right: -150px;
+        top: 10px;
+       margin: 20px;
+       margin-left:40px ;
+       box-sizing: border-box;
+       background-color: cyan;
+      /* left: 20px; */
+    }
+    #heading{
+        text-align: center;
+        color: rgba(221, 87, 87, 0.911);
+        font-weight:900;
+        font-style: oblique;
+        font-size:50px;
+        top: 50px;
+    }
+    .it{
+        color: rgb(50, 12, 138);
+        text-align: center;
+        font-weight:100px;
+        font-style: oblique;
+        font-size:30px;
+    }
+    .para{
+        color: rgba(197, 14, 197, 0.836);
+        font-weight:bold;
+        font-style: oblique;
+        font-size:20px;
+    }
+    .centre{
+        display: block;
+        width: 40%;
+        border: 2px solid rgba(141, 62, 148, 0.521);
+        margin: 20px auto;
+        /* clear: right; */
+        background-color:goldenrod;
+        left:10px
+    }
+    .navbar{
+        display: inline-block;
+        text-decoration: none;
+       clear: right;
+      
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 20px;
+    }
+    .navbar li a{
+        color:rgb(26, 60, 122);
+        text-decoration: none;
+        padding: 20px 20px;
+        /* margin: 40px; */
+        left: 0px;
+    }
+    .navbar li a:hover{
+        /* text-decoration: underline; */
+        color: rgb(223, 55, 92);
+    }
+    #pic{
+        left: 50px;
+        /* top: 15px; */
+        display: inline-block;
+        position: relative;
+    }
+    .con{
+       float: left;
+       position: relative;
+    }
+    .con img{
+        position: relative;
+       top: -110px;
+    }
+    .contai{
+       float : right;
+       display: block;
+       width: 25%;
+       height: 20px;
+       position: relative;
+    }
+    .contai img{
+        position: relative;
+       top: -120px;
+    }
+    
+</style>
+<body>
+    <header>
+        <h1 id ="heading"> SAKSHI FITNESS </h1>
+        <img src="/pexels-photo-1769735.jpeg" alt="" id="pic">
+        <div class="con">
+            <img style="width: 400px;"src="/pexels-photo-2247179.jpeg" alt="">
+           </div>
+           <div class="contai">
+            <img src="/pexels-photo-3757943.jpeg" alt="">
+           </div>
+        <div class="centre">
+            <ul class="navbar">
+                <li><a href="#"  class="active"><strong>4000+ EQUIPMENTS</strong> </a></li>
+                <li><a href="#" class="active"><strong>200k+ CUSTOMERS</strong></a></li>
+                <li><a href="#"  class="active"><strong>5 star average FEEDBACK</strong></a></li>
+                <li><a href="#"  class="active"><strong>304,563  PERSON HAS COMPLETE THEIr JOURNEY</strong></a></li>
+              </ul>
+          </div>
+
+        <div class="left">
+            <h3 class ="it"> OUR STORY</h3>
+            <p class ="para"> Sakshi Fitness was found in 2002 as a family owned and operated business. The Sakshi Fitness founders didn’t want it to be just another gym equipment retailer - they wanted to be the best in the industry and set their minds to doing so! Since its birth, Gym and Fitness has grown into one of Australia’s largest online fitness equipment retailers having helped over 50,000 customers live longer, happier and healthier lives</p>
+        </div>
+        
+        <div class="right">
+            <h3 class="it"> WHAT WE DO</h3>
+            <p class ="para" > We want to help you live a fit and healthy lifestyle! We do this by helping you find the most suitable equipment for your home gym, studio or commercial gym, keeping your budget, lifestyle and fitness goals in mind. We stock a wide range of gym equipment, with strength equipment, cardio, cross training and so much more. Our awesome team is always keen to help, so please call us to discuss your needs.</p>
+        </div>
+       
+    </header>
+</body>
+</html>

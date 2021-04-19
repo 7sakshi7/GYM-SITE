@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAKSHI FITNESS</title>
+</head>
+<!-- <link rel="stylesheet" href="SAKSHI.CSS/gymproject.css"> if want to link external css file -->
+<style>
+    /* CSS Reset */
+    body{
+        margin: 0px;
+        padding: 0px;
+        background : url('/photo-1605640107219-93fdd6e33e5d.jfif') no-repeat center center/cover;
+        /* height: 1344px; */
+        /* width: 1227px; */
+    }
+    .left{
+        position: absolute;
+        left: 30px;
+        top: 15px;
+        /* border: 2px solid red; */
+        display: inline-block;
+    }
+    .left img{
+        width: 120px;
+        height: 80px;
+        filter: invert(100%);
+        
+    }
+    #name{
+        text-align: center;
+        font: outline;
+        font-weight: bolder;
+        color: white;
+    }
+    #name:hover{
+        /* text-decoration-color: lightseagreen; */
+        color: rgb(243, 218, 78);
+    }
+    .centre{
+        display: block;
+        width: 40%;
+        /* border: 2px solid rgba(21, 255, 0, 0.521); */
+        margin: 15px auto;
+        /* clear: right; */
+    }
+    .right{
+        position: absolute;
+        right: 30px;
+        top: 15px;
+        display: inline-block;
+        /* border: 2px solid rgb(251, 255, 0); */
+    }
+    .navbar{
+        display: inline-block;
+        text-decoration: none;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 20px;
+    }
+    /* #active1{
+        text-decoration: underline;
+        color: red;
+    } ---for a specific color for a specific element*/
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 30px 20px;
+        /* box-sizing:initial; */
+      
+    }
+     .navbar li a:hover{
+        text-decoration: underline;
+        color: goldenrod;
+    }
+    .btn{
+        margin:0px 9px;
+        padding: 2px 4px;
+        border-radius: 6px;
+        font-size: 18px;
+        font-family : monospace;
+        font-style: oblique ;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(245, 170, 170);
+        text-decoration: underline;
+    }
+    .container{
+        border:7px solid darkorange;
+        margin:  90px auto;
+        padding: 75px;
+        width: 40%;
+        border-radius: 28px;
+    }
+    .formgrp input{
+        text-align: center;
+        display: block;
+        width: 340px;
+        padding: 1px;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+        font-style:italic;
+
+    }
+    #box{
+        text-align: center;
+        font-weight: bolder;
+        color: rgb(145, 227, 238);
+        font-family: sans-serif;
+        top:3px;
+
+    }
+    .container button{
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+    .timi,.pay{
+        font-weight: bold;
+        font-size: 20px;
+        margin: auto;
+        color: aliceblue;
+    }
+    
+    #Discount{
+        text-align: center;
+        color: azure;
+        /* border: 2px solid white; */
+        /* top: 100px; */
+        margin-top: 50px;
+         /* display: inline-block;  */
+        /* width: 200px; */
+        font-size: x-large; 
+
+    }
+    
+ </style> 
+<body>
+      <!-- left box for logo   -->
+      <header>
+
+          <div class="centre">
+              <ul class="navbar">
+                  <li><a href="" target="_blank" id="active1"><strong>Home</strong> </a></li>
+                  <li><a href="aboutus.html" target="_blank" id="active2"><strong>About Us</strong></a></li>
+                  <li><a href="Fitness calculator.html" target="_blank" id="active3"><strong>Fitness Calculator</strong></a></li>
+                  <li><a href="" target="_blank" id="active4"><strong>Contact Us</strong></a></li>
+                </ul>
+            </div>
+            <h3 id ="Discount"> Get flat 20% Discount<br> We will help you to achieve 
+            your dream body <br>
+        With Top And Certified Gym Trainers </h3>
+            <!-- centre for nav menu -->
+            <div class="left">
+                <img src="/pexels-photo-4397840.jpeg" alt="">
+                <div id="name">Sakshi Fitness</div>
+            </div>
+            <!-- right for option/buttons -->
+            <div class="right">
+                <button class="btn">Call Us Now</button>
+                <button class="btn">Email Us</button>
+            </div>
+            <div class="container">
+                <h1 id="box">JOIN THE EXCLUSIVE GYM IN DELHI</h1>
+                <form action="backend.php">
+                    <div class="formgrp">
+                        <input type="text" name="" id="" placeholder="Enter your name">
+                        <input type="number" name="" id="" placeholder="Enter your Age">
+                        <input type="number" name="" id="" placeholder="Enter your Contact number">
+                        <input type="text" name="" id="" placeholder="Enter your address">
+                        <input type="text" name="" id="" placeholder="Enter your email id">
+                        
+                        <!-- for selecting timing -->
+                        <label for="timing" class="timi">Choose Your Timing:</label>
+                        <select name="Mytiming" id="timing">
+                        
+                            <!-- <option value=" Select">Select</option> -->
+                            <option value="6AM to 8AM">6AM to 8AM</option>
+                           <option value="12PM to 2PM">12PM to 2PM</option>
+                            <option value="2PM to 4PM">2PM to 4PM</option>
+                            <option value="4PM to 6PM">4PM to 6PM</option>
+                            <option value="6PM to 8PM">6PM to 8PM</option>
+                         </select>
+                        
+                        <!-- for selecting mode of payment -->
+                    
+                            <label for="payment" class="pay"> Mode Of Payment:</label>
+                            <select name="Mypayment" id="payment">
+                                
+                                <!-- <option value=" Select">Select</option> -->
+                                <option value="Offline- Cash">Offline- Cash</option>
+                                <option value="Offline-Cheque">Offline-Cheque</option>
+                                <option value="Debit Card">Debit Card</option>
+                                <option value="Credit Card">Credit Card</option>
+                            </select><br>
+                        </div>
+                    <button class="btn">Submit</button>
+                    <button class="btn">Reset</button>
+                </form>
+
+            </div>
+        </header>
+     </body>
+ </html>

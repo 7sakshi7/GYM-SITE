@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Calculator</title>
+</head>
+<style>
+    body{
+        background-color:aquamarine;
+        font-family: cursive;
+    }
+    .heading{
+        text-align: center;
+        color: darkblue;
+        font-weight: bold;
+    }
+   .box{
+       border: 5px solid red;
+       height: 550px;
+       width: 600px;
+       margin: auto;
+   }
+   #your{
+       border: 3px solid burlywood;
+       background-color: rgb(223, 54, 54);
+       color: wheat;
+       text-align: center;
+       font-size: 20px;
+       height: 80px;
+       width: 600px;
+       margin: auto;
+
+   }
+   #general input{ 
+       margin: 10px;
+       margin-left: 10px;
+
+   }
+   #general button{
+       border-radius: 10px;
+       font-size: 30px;
+       margin: 20px;
+       background-color: brown;
+       color: white;
+   }
+   #general button:hover{
+       text-decoration: underline;
+       background-color: violet;
+       color: blue;
+   }
+
+</style>
+<body>
+    <header>
+        <h1 class="heading"> FITNESS CALCULATOR </h1> 
+        <h2 class="heading"> CALCULATE YOUR FITNESS FOR HEALTHY LIFE</h2>
+        <div id="your">
+            <h3> Enter Your Details</h3>
+        </div>
+        <div class="box" id="general">
+            
+            <form action="backend.php">
+                <div>
+                    <label for="gender"> &nbsp;&nbsp;&nbsp; Gender:&nbsp;</label>
+                     Female<input type="radio" name ="mygender" id="gender"> Male<input type="radio" 
+                    name ="mygender" id="gender">
+                </div><br>
+                <div>
+                    <label for="age">&nbsp;&nbsp;&nbsp;Age :</label>
+                     <input type="number" name ="myage" id="age"> Years 
+                </div><br>
+                <div>
+                    <label for="weight">&nbsp;&nbsp;&nbsp;Weight :</label>
+                     <input type="number" name ="myweight" id="weight"> Kg 
+                </div><br>
+                <div>
+                    <label for="height">&nbsp;&nbsp;&nbsp;Height :</label>
+                     <input type="number" name ="myheight" id="height"> Kg 
+                </div><br>
+                <div>
+                    <label for="profession">&nbsp;&nbsp;&nbsp;Profession:</label>
+                     <select name="myprofession" id="profession">
+                         <option value="Housewife">Housewife</option>
+                         <option value="Student">Student</option>
+                         <option value="Working">Working</option>
+                         <option value="Other">Other</option>
+                     </select>
+                </div><br>
+                <div>
+                    <label for="activity">&nbsp;&nbsp;&nbsp;Duration of Physical Activity:</label>
+                     <select name="myactivity" id="activity">
+                         <option value="1 Hours">1 Hours</option>
+                         <option value="2 Hours">2 Hours</option>
+                         <option value="3 Hours">3 Hours</option>
+                         <option value="No Activity">No Activity</option>
+                     </select>
+                </div><br>
+            </form>
+            <div class="calculate">
+                <button class="btn"> Calculate</button>
+            </div>
+
+        </div>
+    </header>
+</body>
+</html>
